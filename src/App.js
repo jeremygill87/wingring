@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Rouer, Route, Switch} from "react-router-dom";
+import Banner from "./components/banner/banner";
+import Raters from "./components/raterspage/raterspage";
+import Sidebar from "./components/sidebar/sidebar";
+import Welcome from "./components/welcomescreen/welcomescreen";
+import Wings from "./components/wingspage/wingspage";
+import About from "./components/aboutpage/aboutpage";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Banner/>
+        <Sidebar/>
+        <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" render={() => <Welcome/>}/>
+            <Route exact path="/about" render={() => <About/>}/>
+            <Route exact path="/raters" render={() => <Raters/>}/>
+            <Route exact path="/wings" render={() => <Wings/>}/>
+          </Switch> 
+        </div>
+      </Router>
+      </div>
+      
+    )
+  }
 }
 
 export default App;
