@@ -1,0 +1,33 @@
+#jumbotron-container {
+    background-color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+ul#links-bar.nav {
+    min-height: 48px;
+    width: auto;
+    text-align: center;
+    background-color: black;
+    display: block;
+}
+
+ul#links-bar li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+
+ul#links-bar li a {
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+

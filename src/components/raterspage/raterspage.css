@@ -1,0 +1,48 @@
+#raters-container {
+    background-color: #4D4442;
+}
+
+#raters-headline {
+    margin-bottom: 20px;
+}
+
+#raters-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #998E8C;
+}
+
+#image-container {
+    float: left;
+}
+#raters-row {
+    background-color: #998E8C;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#rater-image {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#data-container {
+    background-color: red;
+}
+#raters-data {
+    float:right;
+}
+
+#raters-name {
+    font-size: 32px;
+    margin-left: 30px;
+}
+
+#raters-highlights {
+    
+}
